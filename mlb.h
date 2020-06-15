@@ -1,4 +1,8 @@
 
+/**
+ * A basic structure to represent an MLB
+ * team.
+ */
 typedef struct {
   char *name;
   int wins;

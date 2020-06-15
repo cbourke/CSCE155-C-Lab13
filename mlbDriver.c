@@ -1,5 +1,9 @@
-#include <stdio.h>
+/**
+ * Main driver program for the MLB team
+ * sorting and searching demo code.
+ */
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
 #include <search.h>
 

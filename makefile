@@ -1,4 +1,7 @@
-
+#
+# makefile for mlb sorting utilities
+# and demonstrations
+#
 CC = gcc -std=gnu99
 
 mlbDemo: mlbDriver.c mlb.o
