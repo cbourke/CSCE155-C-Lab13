@@ -12,7 +12,7 @@
 extern int NUM_TEAMS;
 
 int main(int argc, char **argv) {
-  char filePath[] = "data/mlb_nl_2011.txt";
+  char filePath[] = "../data/mlb_nl_2011.txt";
 
   Team *teams = readFile(filePath);
 

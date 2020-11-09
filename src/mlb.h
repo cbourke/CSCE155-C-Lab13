@@ -44,7 +44,7 @@ void bubbleSortTeams(Team *teams, int size,
 
 /**
  * An implementation of selection sort that sorts the given teams
- * according to payroll.
+ * according to payroll in descending order.
  */
 void selectionSortTeamsByPayroll(Team *teams, int size);
 
