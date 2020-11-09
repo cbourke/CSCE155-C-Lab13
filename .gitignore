@@ -29,3 +29,11 @@ figures/_minted*
 
 #
 .DS_Store
+
+# solution and grading scripts
+solution
+
+# binaries
+a.out
+*.o
+*.so
