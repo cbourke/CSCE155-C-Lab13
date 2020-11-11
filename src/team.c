@@ -3,13 +3,12 @@
 #include <string.h>
 #include <monetary.h>
 
-#include "mlb.h"
+#include "team.h"
 
 const int NUM_TEAMS = 16;
 
-Team *createTeam(char *name, int wins, int loss, char *city, char *state,
+void initTeam(Team *t, char *name, int wins, int loss, char *city, char *state,
                  double payroll, double aveSalary) {
-  Team *t = (Team *)malloc(sizeof(Team) * 1);
   t->name = (char *)malloc(sizeof(char) * (strlen(name) + 1));
   strcpy(t->name, name);
   t->wins = wins;
@@ -20,7 +19,7 @@ Team *createTeam(char *name, int wins, int loss, char *city, char *state,
   strcpy(t->state, state);
   t->payroll = payroll;
   t->averageSalary = aveSalary;
-  return t;
+
 }
 
 void printTeam(const Team *t) {
@@ -28,8 +27,8 @@ void printTeam(const Team *t) {
     printf("null\n");
     return;
   }
-  double winPerc = t->wins / (double)(t->wins + t->loss);
-  printf("%-10s %3d  %3d (%4.3f) %-15s %2s $%12.2f $%9.2f\n", t->name, t->wins,
+  double winPerc = 100.0 * t->wins / (double)(t->wins + t->loss);
+  printf("%-10s %3d  %3d (%5.2f) %-15s %2s $%12.2f $%9.2f\n", t->name, t->wins,
          t->loss, winPerc, t->city, t->state, t->payroll, t->averageSalary);
 }
 
@@ -37,18 +36,19 @@ void printAllTeams(Team *teams, int size) {
   int i;
   printf("%-9s %-4s %-4s (%-4s) %-12s %-2s %-13s %-11s\n", "Name", "Wins",
            "Loss", "Win %", "City", "State", "Payroll", "Avg Salary");
+  printf("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n");
   for (i = 0; i < size; i++) {
     printTeam(&teams[i]);
   }
+  printf("\n\n");
 }
 
-Team *readFile(const char *fileName) {
+Team *readCsvFile(const char *fileName) {
   Team *teams = (Team *)malloc(sizeof(Team) * NUM_TEAMS);
 
   FILE *instream = fopen(fileName, "r");
   if (instream == NULL) {
-    fprintf(stderr, "Unable to open file: %s\n", fileName);
-    exit(1);
+    return NULL;
   }
 
   // read the file, line by line
@@ -56,7 +56,7 @@ Team *readFile(const char *fileName) {
   int size = 1000;
   char *tempBuffer = (char *)malloc(sizeof(char) * size);
 
-  // discard first line
+  // discard first line (headers)
   fgets(tempBuffer, size, instream);
   while (fgets(tempBuffer, size, instream) != NULL && i < NUM_TEAMS) {
     char name[100];
@@ -65,16 +65,15 @@ Team *readFile(const char *fileName) {
     double payroll, averageSalary;
     // remove the endline character from the line
     tempBuffer[strlen(tempBuffer) - 1] = '\0';
-    char *teamToken = strtok(tempBuffer, " ");
+    char *teamToken = strtok(tempBuffer, ",");
     strcpy(name, teamToken);
-    wins = atoi(strtok(NULL, " "));
-    loss = atoi(strtok(NULL, " "));
-    city = strtok(NULL, " ");
-    state = strtok(NULL, " ");
-    payroll = atof(strtok(NULL, " "));
-    averageSalary = atof(strtok(NULL, " "));
-    Team *t = createTeam(name, wins, loss, city, state, payroll, averageSalary);
-    teams[i] = *t;
+    wins = atoi(strtok(NULL, ","));
+    loss = atoi(strtok(NULL, ","));
+    city = strtok(NULL, ",");
+    state = strtok(NULL, ",");
+    payroll = atof(strtok(NULL, ","));
+    averageSalary = atof(strtok(NULL, ","));
+    initTeam(&teams[i], name, wins, loss, city, state, payroll, averageSalary);
     i++;
   }
   fclose(instream);

@@ -111,10 +111,10 @@ team payroll (in dollars) in increasing order.
 #### Instructions
 
 1.  Familiarize yourself with the `Team` structure and the functions provided
-    to you (the program automatically loads the data from the data file
+    to you (the program automatically loads the data from the CSV file
     and provides an array of teams).
 
-2.  Implement the `selectionSortTeamsByPayroll` function in the `mlb.c` 
+2.  Implement the `selectionSortTeamsByPayroll` function in the `team.c` 
     file as specified by the header documentation. 
 
 3.  Compile and run your program (use make which produces an executable
@@ -195,7 +195,7 @@ where
     implemented and how the `qsort` function is called.
 
 2.  Implement your own comparator function that orders `Team`s according 
-    to payroll in increasing order.
+    to payroll in *increasing order*.
 
 3.  Use your function in the `main` program to re-sort the 
     array and print out the results.
@@ -219,10 +219,11 @@ as the array that contains values of fields that you're searching for.
 
 ### Instructions
 
-1.  Examine the searching code segment in the `mlbDriver.` and 
+1.  Examine the searching code segment in the `mlbDriver.c` file and 
     understand how each function is called.
 
-2.  Answer the questions in your worksheet regarding this code segment.
+2.  Observe that each of the 4 searches have *different* results.
+    Discuss with your partner (or yourself) why this is the case.
 
 3.  Based on your observations add code to search the array for the team
     representing the Chicago Cubs.
@@ -238,12 +239,6 @@ as the array that contains values of fields that you're searching for.
         function to find the `Team` representing the Chicago Cubs.
 
     4.  Print out the team by using the `printTeam` function.
-
-4.  Examine the "search, find" section of the `main` function.  A key 
-    has been created that will match any team from California (CA).  
-    Run the code and observe the results for the four searches.  
-    
-    Think about why the same search produced different results.
 
 ## 4. Handin/Grader Instructions
 

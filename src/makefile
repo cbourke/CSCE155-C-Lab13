@@ -2,10 +2,10 @@
 # makefile for mlb sorting utilities
 # and demonstrations
 #
-CC = gcc -std=gnu99
+CC = gcc -std=gnu99 -Wall -Wextra
 
-mlbDemo: mlbDriver.c mlb.o
-	$(CC) -o mlbDriver mlb.o mlbDriver.c
+mlbDriver: mlbDriver.c team.o
+	$(CC) -o mlbDriver team.o mlbDriver.c
 
-mlb.o: mlb.h mlb.c
-	$(CC) -c -o mlb.o mlb.c
+team.o: team.h team.c
+	$(CC) -c -o team.o team.c

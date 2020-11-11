@@ -14,16 +14,16 @@ typedef struct {
 } Team;
 
 /**
- * A factory function to create a Team structure instance.
+ * A factory function to initialize a Team structure instance.
  */
-Team *createTeam(char *name, int wins, int loss, char *city, char *state,
+void initTeam(Team *team, char *name, int wins, int loss, char *city, char *state,
                  double payroll, double aveSalary);
 
 /**
  * Reads in Team data from the given file, returns
  * an array of Teams.
  */
-Team *readFile(const char *fileName);
+Team *readCsvFile(const char *fileName);
 
 /**
  * Prints a single team to the standard output.
@@ -75,4 +75,4 @@ int teamComparisonByState(const void *s1, const void *s2);
  */
 int teamComparisonByStateCity(const void *s1, const void *s2);
 
-// TODO: add your comparator function definition(s) here
+// TODO: add your comparator function prototype(s) here
