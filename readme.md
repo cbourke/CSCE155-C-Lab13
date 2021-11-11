@@ -1,11 +1,11 @@
 # Computer Science I
 ## Lab 13.0 - Searching & Sorting
 
-This is a lab used in Computer Science I (CSCE 155E, CSCE 155H) in the 
-[Department of Computer Science & Engineering](https://cse.unl.edu) at the 
+This is a lab used in Computer Science I (CSCE 155E, CSCE 155H) in the
+[School of Computing](https://computing.unl.edu) at the
 [University of Nebraska-Lincoln](https://unl.edu).
 
-## 1. Overview 
+## 1. Overview
 
 ### Prior to Lab
 
@@ -114,8 +114,8 @@ team payroll (in dollars) in increasing order.
     to you (the program automatically loads the data from the CSV file
     and provides an array of teams).
 
-2.  Implement the `selectionSortTeamsByPayroll` function in the `team.c` 
-    file as specified by the header documentation. 
+2.  Implement the `selectionSortTeamsByPayroll` function in the `team.c`
+    file as specified by the header documentation.
 
 3.  Compile and run your program (use make which produces an executable
     called `mlbDriver`) and verify the results.
@@ -140,9 +140,9 @@ Comparator functions *must* have the following signature:
 
 `int cmp(const void *a, const void *b);`
 
-Such a function takes two arguments `a` and `b` (specified by generic 
+Such a function takes two arguments `a` and `b` (specified by generic
 void pointers) and returns an integer with the following "contract":
-it returns 
+it returns
 
 -   A negative value if `a < b`
 
@@ -157,8 +157,8 @@ a result that orders the two teams appropriately.
 
 #### Instructions
 
-1.  Implement the `selectionSortTeams` function by using the code 
-    in Activity 1 with appropriate modifications (use the provided 
+1.  Implement the `selectionSortTeams` function by using the code
+    in Activity 1 with appropriate modifications (use the provided
     `compar` function to find the minimum element each time)
 
 2.  Look at the comparator functions provided to you and to the bubble
@@ -175,7 +175,7 @@ The better way of doing this is to leverage the standard C library’s
 sorting function. The signature of this function is as follows:
 
 ```c
-void qsort(void *base, size_t nmemb, size_t size, 
+void qsort(void *base, size_t nmemb, size_t size,
     int(*compar)(const void *, const void *));
 ```
 
@@ -194,10 +194,10 @@ where
 1.  Examine the source files and observe how comparator functions are
     implemented and how the `qsort` function is called.
 
-2.  Implement your own comparator function that orders `Team`s according 
+2.  Implement your own comparator function that orders `Team`s according
     to payroll in *increasing order*.
 
-3.  Use your function in the `main` program to re-sort the 
+3.  Use your function in the `main` program to re-sort the
     array and print out the results.
 
 ### 3.4. Searching
@@ -219,7 +219,7 @@ as the array that contains values of fields that you're searching for.
 
 ### Instructions
 
-1.  Examine the searching code segment in the `mlbDriver.c` file and 
+1.  Examine the searching code segment in the `mlbDriver.c` file and
     understand how each function is called.
 
 2.  Observe that each of the 4 searches have *different* results.
@@ -229,7 +229,7 @@ as the array that contains values of fields that you're searching for.
     representing the Chicago Cubs.
 
     1.  Create a dummy `Team` key for the Cubs by calling the `createTeam`
-        function using empty strings and zero values except for the team 
+        function using empty strings and zero values except for the team
         name (which should be `"Cubs"`).
 
     2.  Sort the array by team name by calling `qsort` using the appropriate
@@ -244,8 +244,8 @@ as the array that contains values of fields that you're searching for.
 
 1.  Hand in your completed files:
 
-    - `mlb.h`
-    - `mlb.c`
+    - `team.h`
+    - `team.c`
     - `mlbDriver.c`
 
     through the webhandin (<https://cse-apps.unl.edu/handin>) using your
@@ -262,7 +262,7 @@ as the array that contains values of fields that you're searching for.
     as your program successfully compiles, runs and outputs the *same
     values*, it is considered correct.
 
-        
+
 ## Advanced Activity (Optional)
 
 Selection sort is a quadratic sorting algorithm, thus doubling the input
