@@ -2,7 +2,8 @@
 ## Lab 13.0 - Searching & Sorting
 
 This is a lab used in Computer Science I (CSCE 155E, CSCE 155H) in the
-[School of Computing](https://computing.unl.edu) at the
+[School of Computing](https://computing.unl.edu) in the
+[College of Engineering](https://engineering.unl.edu/) at the
 [University of Nebraska-Lincoln](https://unl.edu).
 
 ## 1. Overview
