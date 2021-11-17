@@ -107,7 +107,7 @@ In this activity, you will implement a selection sort algorithm to
 sort an array of structures. Refer to lecture notes, your text, or any
 online source on how to implement the selection sort algorithm. The
 order by which you will sort the array will be according to the total
-team payroll (in dollars) in increasing order.
+team payroll (in dollars).
 
 #### Instructions
 
@@ -116,7 +116,7 @@ team payroll (in dollars) in increasing order.
     and provides an array of teams).
 
 2.  Implement the `selectionSortTeamsByPayroll` function in the `team.c`
-    file as specified by the header documentation.
+    file as specified by the header (`team.h`) documentation.
 
 3.  Compile and run your program (use make which produces an executable
     called `mlbDriver`) and verify the results.
