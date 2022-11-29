@@ -229,7 +229,7 @@ as the array that contains values of fields that you're searching for.
 3.  Based on your observations add code to search the array for the team
     representing the Chicago Cubs.
 
-    1.  Create a dummy `Team` key for the Cubs by calling the `createTeam`
+    1.  Create a dummy `Team` key for the Cubs by using the `initTeam`
         function using empty strings and zero values except for the team
         name (which should be `"Cubs"`).
 
