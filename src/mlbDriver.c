@@ -16,11 +16,11 @@ int main(int argc, char **argv) {
   //default file path
   char *filePath = "../data/mlb_nl_2011.csv";
   if(argc == 2) {
-    filePath = argv[1];    
+    filePath = argv[1];
   }
 
   Team *teams = readCsvFile(filePath);
-  
+
   if(teams == NULL) {
     fprintf(stderr, "Unable to process CSV file.\n");
     exit(1);
@@ -44,15 +44,15 @@ int main(int argc, char **argv) {
   printAllTeams(teams, NUM_TEAMS);
 
   printf("(Quick) Sorted by name: \n");
-  qsort(teams, 16, sizeof(Team), teamComparisonByName);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByName);
   printAllTeams(teams, NUM_TEAMS);
 
   printf("(Quick) Sorted by win percentage: \n");
-  qsort(teams, 16, sizeof(Team), teamComparisonByWinPercentage);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByWinPercentage);
   printAllTeams(teams, NUM_TEAMS);
 
   printf("(Quick) Sorted by state (then city): \n");
-  qsort(teams, 16, sizeof(Team), teamComparisonByStateCity);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByStateCity);
   printAllTeams(teams, NUM_TEAMS);
 
   printf("(Quick) Sorted by payroll (increasing order): \n");
@@ -64,23 +64,23 @@ int main(int argc, char **argv) {
   initTeam(&caKey, "", 0, 0, "", "CA", 0, 0);
   Team *caTeam = NULL;
 
-  qsort(teams, 16, sizeof(Team), teamComparisonByWinPercentage);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByWinPercentage);
   caTeam = bsearch(&caKey, teams, NUM_TEAMS, sizeof(Team), teamComparisonByState);
   printf("Search #1 result for CA team (via state): \n");
   printTeam(caTeam);
 
-  qsort(teams, 16, sizeof(Team), teamComparisonByState);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByState);
   caTeam = bsearch(&caKey, teams, NUM_TEAMS, sizeof(Team), teamComparisonByState);
   printf("Search #2 result for CA team (via state): \n");
   printTeam(caTeam);
 
-  qsort(teams, 16, sizeof(Team), teamComparisonByStateCity);
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByStateCity);
   caTeam = bsearch(&caKey, teams, NUM_TEAMS, sizeof(Team), teamComparisonByState);
   printf("Search #3 result for CA team (via state): \n");
   printTeam(caTeam);
 
-  qsort(teams, 16, sizeof(Team), teamComparisonByWinPercentage);
-  size_t elems = 16;
+  qsort(teams, NUM_TEAMS, sizeof(Team), teamComparisonByWinPercentage);
+  size_t elems = NUM_TEAMS;
   caTeam = lfind(&caKey, teams, &elems, sizeof(Team), teamComparisonByState);
   printf("Search #4 result for CA team (via state): \n");
   printTeam(caTeam);
