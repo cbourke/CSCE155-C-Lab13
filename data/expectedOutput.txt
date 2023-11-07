@@ -1,0 +1,177 @@
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+
+
+(Bubble) Sorted by win percentage:
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+
+
+(Selection) Sorted by payroll:
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+
+
+(Selection with comparator) Sorted by payroll:
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+
+
+(Quick) Sorted by name:
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+
+
+(Quick) Sorted by win percentage:
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+
+
+(Quick) Sorted by state (then city):
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+
+
+(Quick) Sorted by payroll (increasing order):
+Name      Wins Loss (Win %) City         State Payroll       Avg Salary
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Pirates     72   90 (44.44) Pittsburgh      PA $ 45047000.00 $1553344.00
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+DBacks      94   68 (58.02) Phoenix         AZ $ 53639833.00 $1986660.00
+Marlins     72   90 (44.44) Miami           FL $ 56944000.00 $2190153.00
+Nationals   80   81 (49.69) Washington      DC $ 63856928.00 $2201963.00
+Astros      56  106 (34.57) Houston         TX $ 70694000.00 $2437724.00
+Reds        79   83 (48.77) Cincinnati      OH $ 75947134.00 $2531571.00
+Brewers     96   66 (59.26) Milwaukee       WI $ 85497333.00 $2849911.00
+Braves      89   73 (54.94) Atlanta         GA $ 87002692.00 $3346257.00
+Rockies     73   89 (45.06) Denver          CO $ 88148071.00 $3390310.00
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Cardinals   90   72 (55.56) St Louis        MO $105433572.00 $3904947.00
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Mets        77   85 (47.53) New York        NY $118847309.00 $4401752.00
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00
+Phillies   102   60 (62.96) Philadelphia    PA $172976379.00 $5765879.00
+
+
+Search #1 result for CA team (via state):
+null
+Search #2 result for CA team (via state):
+Dodgers     82   79 (50.93) Los Angeles     CA $104188999.00 $3472966.00
+Search #3 result for CA team (via state):
+Padres      71   91 (43.83) San Diego       CA $ 45869140.00 $1479649.00
+Search #4 result for CA team (via state):
+Giants      86   76 (53.09) San Francisco   CA $118198333.00 $4377716.00
+Search #1 result for Cubs team (via name):
+Cubs        71   91 (43.83) Chicago         IL $124047329.00 $5001893.00

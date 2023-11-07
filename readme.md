@@ -1,7 +1,5 @@
 # Computer Science I
 ## Lab 13.0 - Searching & Sorting
-
-This is a lab used in Computer Science I (CSCE 155E, CSCE 155H) in the
 [School of Computing](https://computing.unl.edu) in the
 [College of Engineering](https://engineering.unl.edu/) at the
 [University of Nebraska-Lincoln](https://unl.edu).
@@ -241,6 +239,12 @@ as the array that contains values of fields that you're searching for.
 
     4.  Print out the team by using the `printTeam` function.
 
+4.  Examine your output and compare it to the `data/expectedOutput.txt` file;
+    fix any errors before you submit.
+
+5.  Discuss with your partner: why were all the search results for
+    a California (CA) team different?
+
 ## 4. Handin/Grader Instructions
 
 1.  Hand in your completed files:
@@ -249,26 +253,15 @@ as the array that contains values of fields that you're searching for.
     - `team.c`
     - `mlbDriver.c`
 
-    through the webhandin (<https://cse-apps.unl.edu/handin>) using your
-    cse login and password.
-
 2.  Even if you worked with a partner, you *both* should turn in all
     files.
-
-3.  Verify your program by grading yourself through the webgrader
-    (<https://cse.unl.edu/~cse155e/grade/>) using the same credentials.
-
-4.  Recall that both expected output and your program’s output will be
-    displayed. The formatting may differ slightly which is fine. As long
-    as your program successfully compiles, runs and outputs the *same
-    values*, it is considered correct.
 
 
 ## Advanced Activity (Optional)
 
 Selection sort is a quadratic sorting algorithm, thus doubling the input
-size (*n* elements to *2n* elements) leads to a blowup in its execution
-time by a factor of 4. Quick sort requires only *nlog(n)* operations on
+size ($n$ elements to $2n$ elements) leads to a blowup in its execution
+time by a factor of 4. Quick sort requires only $n\log{(n)}$ operations on
 average, so doubling the input size would only lead (roughly) to a
 blowup in execution time by a factor of about 2. Verify this theoretical
 analysis by setting up an experiment to time each sorting algorithm on
