@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <monetary.h>
 
 #include "team.h"
 
@@ -125,11 +124,11 @@ int teamComparisonByState(const void *s1, const void *s2) {
 int teamComparisonByStateCity(const void *s1, const void *s2) {
   const Team *t1 = (const Team *)s1;
   const Team *t2 = (const Team *)s2;
-  if (strcmp(t1->state, t2->state) == 0) {
-    return strcmp(t1->city, t2->city);
-  } else {
-    return strcmp(t1->state, t2->state);
+  int result = strcmp(t1->state, t2->state);
+  if (result == 0) {
+    result = strcmp(t1->city, t2->city);
   }
+  return result;
 }
 
 int teamComparisonByWinPercentage(const void *s1, const void *s2) {
@@ -140,10 +139,10 @@ int teamComparisonByWinPercentage(const void *s1, const void *s2) {
 
   if (t1_winPer < t2_winPer) {
     return 1;
-  } else if (t1_winPer == t2_winPer) {
-    return 0;
-  } else {
+  } else if (t1_winPer > t2_winPer) {
     return -1;
+  } else {
+    return 0;
   }
 }
 
