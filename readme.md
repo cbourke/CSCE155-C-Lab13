@@ -240,7 +240,9 @@ as the array that contains values of fields that you're searching for.
     4.  Print out the team by using the `printTeam` function.
 
 4.  Examine your output and compare it to the `data/expectedOutput.txt` file;
-    fix any errors before you submit.
+    fix any errors before you submit.  It may be useful to use an online "diff"
+    tool (ex: <https://www.diffchecker.com/>) to highlight where your output
+    may differ.
 
 5.  Discuss with your partner: why were all the search results for
     a California (CA) team different?
@@ -259,7 +261,7 @@ as the array that contains values of fields that you're searching for.
 
 ## Advanced Activity (Optional)
 
-Selection sort is a quadratic sorting algorithm, thus doubling the input
+Selection sort is a *quadratic* sorting algorithm, thus doubling the input
 size ($n$ elements to $2n$ elements) leads to a blowup in its execution
 time by a factor of 4. Quick sort requires only $n\log{(n)}$ operations on
 average, so doubling the input size would only lead (roughly) to a
